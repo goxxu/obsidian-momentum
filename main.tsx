@@ -29,7 +29,6 @@ export default class CounterPlugin extends Plugin {
 		/* Settings */
 
 		this.init()
-
 	}
 
 	onunload() {}
@@ -38,8 +37,8 @@ export default class CounterPlugin extends Plugin {
 		const stringForReplace = `[habit-counter|${moment().format("MM-DD-YYYY hh:mm")}]`
 		
 		this.addCommand({
-			id: "add-html",
-			name: "Add HTML",
+			id: "add-momentum-counter",
+			name: "Add momentum counter",
 			editorCallback: (editor: Editor) => {
 				editor.replaceSelection(`${stringForReplace}\n`)
 			}
