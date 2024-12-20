@@ -1,0 +1,63 @@
+div.c-counter-wrap
+    display: inline-block
+    min-width: 220px
+
+    h3.c-counter-title
+        font-size: 20px
+        text-align: center
+        white-space: nowrap
+        margin: 0
+        margin-bottom: 15px
+    
+    div.c-habit-counter
+        padding: 15px
+        display: inline-block
+        border: 1px solid var(--background-modifier-border)
+        background: var(--background-primary)
+        width: 100%
+        border-radius: 5px
+
+        div.c-counter-item
+            position: relative
+            margin-bottom: 10px
+            border-radius: 5px
+            padding: 10px
+            color: #000
+            overflow: hidden
+
+            div.transparent-bg
+                position: absolute
+                top: 0
+                left: 0
+                height: 100%
+                width: 100%
+                background: rgba(0,0,0,.1)
+                z-index: 1
+
+            div.c-counter-progress
+                position: absolute
+                left: 0
+                top: 0
+                height: 100%
+                z-index: 2
+
+                &.cc-progress0
+                    background: #F7D8BA
+
+                &.cc-progress1
+                    background: #FFE7C7
+
+                &.cc-progress2
+                    background: #E1F8DC
+
+                &.cc-progress3
+                    background: #CAF1DE
+
+                &.cc-progress4
+                    background: #ACDDDE
+
+        span.c-counter-text
+            color: #fff
+            position: relative
+            mix-blend-mode: difference
+            z-index: 5
