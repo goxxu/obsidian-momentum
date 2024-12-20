@@ -19,10 +19,8 @@
 2. Copy the plugin folder to your Obsidian vault under `.obsidian/plugins/momentum`.
 3. Restart Obsidian and enable the plugin in Settings > Community Plugins.
 
-## Support
-If you enjoy using Momentum, consider supporting its development:
-- [Buy me a coffee](https://your-funding-link.com)
-- [Visit the author’s website](https://your-website.com)
+## Contacts
+Email: goxxudev@gmail.com
 
 ## License
 This plugin is licensed under the [MIT License](LICENSE).
