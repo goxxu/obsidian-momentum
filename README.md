@@ -68,3 +68,6 @@ If you encounter any issues or have feature requests, please open an issue on th
 - Obsidian Milestone Counter
 - Visual Habit Tracking
 - Streak Counter for Obsidian
+
+### Contacts
+**Email:** goxxudev@gmail.com
