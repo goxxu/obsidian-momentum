@@ -5,7 +5,6 @@ import { FC, useEffect, useState } from "react"
 import "./styles/counter.sass"
 
 // Local Types 
-
 type Counter = {
     counter: number,
     type: string,
@@ -18,12 +17,12 @@ interface ReactViewProps {
 const ReactView: FC<ReactViewProps> = ({ data }) => {
 
     /* Other */
-    const { startDate, settings } = data
+    const { settings } = data
     /* Other */
 
     /* State */
     const [counters, setCounters] = useState<Counter[]>([])
-    const [isDataUpdated, setIsDataUpdated] = useState<boolean>(false)
+    const [currentSettings, setCurrentSettings] = useState<any>({})
     /* State */
 
     /* EFFECTS */
@@ -33,14 +32,13 @@ const ReactView: FC<ReactViewProps> = ({ data }) => {
     }, [])
 
     useEffect(() => {
-        console.log("Data:", data)
-        setIsDataUpdated(!isDataUpdated)
-    }, [data])
+        setCurrentSettings(settings)
+    }, [settings])
     /* EFFECTS */
 
     /* Halpers */
     const updateCounters = () => {
-        const startMoment = moment(startDate, "MM-DD-YYYY HH:mm")
+        const startMoment = moment(settings.startDate, "MM-DD-YYYY HH:mm")
 
         const now = moment()
         const duration = moment.duration(now.diff(startMoment))
@@ -98,16 +96,14 @@ const ReactView: FC<ReactViewProps> = ({ data }) => {
     }
     /* Halpers */
 
-    console.log("Settings:", settings)
-
     return <>
         <div className="c-counter-wrap">
-            {settings.title 
+            {currentSettings?.title 
                 && <h3
                     className="c-counter-title"
-                    style={{ color: settings.titleColor }}
+                    style={{ color: currentSettings.titleColor }}
                 >
-                    {settings.title}
+                    {currentSettings?.title}
                 </h3>}
             <div className="c-habit-counter">
                 {counters.map((counter, index) => {
@@ -119,11 +115,11 @@ const ReactView: FC<ReactViewProps> = ({ data }) => {
                         <div
                             style={{
                                 width: `${getWidth(counter)}%`,
-                                backgroundColor: settings[counter.type],
+                                backgroundColor: currentSettings[counter?.type],
                             }}
                             className={`c-counter-progress cc-progress${index}`}
                         ></div>
-                        <span className="c-counter-text">{counter.counter} {counter.type}</span>
+                        <span className="c-counter-text">{counter?.counter} {counter?.type}</span>
                     </div>
                 })}
             </div>
