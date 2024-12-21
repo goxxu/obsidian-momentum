@@ -29,7 +29,7 @@
 
 Here's how it looks in action:
 
-![Momentum Counter Example](https://github.com/goxxu/[reponame]/blob/[branch]/image.jpg?raw=true)
+![Momentum Counter Example](https://github.com/goxxu/obsidian-momentum/blob/main/example.png?raw=true)
 
 In this example, you can see:
 - **Smoke-Free for**: Tracks time since quitting smoking.
