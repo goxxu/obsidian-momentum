@@ -1,28 +1,70 @@
-# Momentum
+# Momentum Counter Plugin for Obsidian
 
-**Momentum** is an Obsidian plugin that helps you track and visualize the time since significant events. Whether you're building habits, celebrating milestones, or marking progress, Momentum keeps you motivated.
+**Momentum Counter** is a simple and intuitive plugin for Obsidian that helps you track time since specific milestones or events. Whether you're monitoring how long you've been smoke-free, celebrating years of marriage, or counting your morning run streaks, this plugin offers a visually engaging way to see your progress directly in your notes.
+
+---
 
 ## Features
-- **Track milestones**: Automatically calculate and display the time passed since any event.
-- **Customizable visuals**: Adjust colors and styles to suit your preferences.
-- **Markdown integration**: Embed counters directly into your notes.
-- **Cross-platform support**: Works on desktop and mobile.
 
-## Usage
-1. Install the plugin via Obsidian's community plugin store or manually.
-2. Enable the plugin in Obsidian settings.
-3. Use the command palette to insert a "Momentum" counter in your notes.
-4. Customize colors and settings in the plugin's settings tab.
+- **Custom Counters**: Add unique counters to track time for specific milestones.
+- **Dynamic Visualization**: Displays time in years, months, days, hours, and minutes.
+- **Easy Commands**: Quickly add counters to your notes using a simple syntax.
+- **Real-Time Updates**: Counters refresh automatically to show accurate progress.
+- **Customizable Settings**: Adjust colors, titles, and descriptions for each counter.
 
-## Installation
-1. Clone the repository or download the plugin files.
-2. Copy the plugin folder to your Obsidian vault under `.obsidian/plugins/momentum`.
-3. Restart Obsidian and enable the plugin in Settings > Community Plugins.
+---
 
-## Support
-If you enjoy using Momentum, consider supporting its development:
-- [Buy me a coffee](https://your-funding-link.com)
-- [Visit the author’s website](https://your-website.com)
+## How It Works
 
-## License
-This plugin is licensed under the [MIT License](LICENSE).
+1. Insert a counter in any note using the syntax: [momentum-counter|:counterId] or simply by the "Add Momentum Counter" command, which will generate the ID automatically. **(recommended approach)**
+2. The plugin automatically generates a unique counter and tracks time starting from the current date.
+3. Customize your counter in the plugin settings:
+- Set a custom title.
+- Change the start date.
+- Adjust colors for years, months, days, hours, and minutes.
+
+---
+
+## Example
+
+Here's how it looks in action:
+
+![Momentum Counter Example](https://github.com/goxxu/[reponame]/blob/[branch]/image.jpg?raw=true)
+
+In this example, you can see:
+- **Smoke-Free for**: Tracks time since quitting smoking.
+- **Married for**: Monitors years of marriage.
+- **Morning Runs Since**: Counts time since starting a morning running habit.
+
+---
+
+## Customization
+
+- Open the plugin settings to customize each counter:
+- Change the title to suit your milestone.
+- Update the start date to match your event.
+- Select different colors for a personalized look.
+
+---
+
+## Use Cases
+
+- **Habit Tracking**: See how long you've been smoke-free, alcohol-free, or sticking to a new habit.
+- **Celebrating Milestones**: Count years since important life events like marriage or graduation.
+- **Routine Tracking**: Monitor streaks, like daily workouts or writing sessions.
+
+---
+
+## Feedback and Support
+
+If you encounter any issues or have feature requests, please open an issue on the plugin's GitHub repository. Your feedback is greatly appreciated!
+
+---
+
+### Keywords for Search Optimization
+
+- Obsidian Habit Tracker
+- Time Since Plugin
+- Obsidian Milestone Counter
+- Visual Habit Tracking
+- Streak Counter for Obsidian
